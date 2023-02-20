@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Contact Channel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This channel is meant to send the ID of a Contact record.</description>
+    <lightningMessageFields>
+        <fieldName>contactId</fieldName>
+        <description>The ID field of a Contact.</description>
+    </lightningMessageFields>
+</LightningMessageChannel>
