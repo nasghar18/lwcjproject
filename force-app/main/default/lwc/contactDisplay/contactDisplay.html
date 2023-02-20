@@ -1,0 +1,19 @@
+<template>
+    <lightning-card if:true={contactToDisplay}>
+        <h3 slot="title">
+            <lightning-icon icon-name="standard:contact"></lightning-icon>
+            &nbsp;{name}
+        </h3>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <p>Phone Number: <lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+                <p>Email: <lightning-formatted-email value={email}></lightning-formatted-email></p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <p>Department: {department}</p>
+                <p>Title: {title}</p>
+                <p>Birthday: <lightning-formatted-date-time value={birthdate}></lightning-formatted-date-time></p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
